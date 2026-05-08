@@ -8,6 +8,7 @@
 <body>
     <div class="container">
         <h2>Class Attendance</h2>
+        
         <form id="attendanceForm">
             <input type="text" id="studentName" placeholder="Student Name" required>
             <input type="text" id="studentUSN" placeholder="USN (Student Number)" required>
@@ -20,7 +21,17 @@
             </select>
             <button type="submit">Submit Attendance</button>
         </form>
+        
         <div id="message"></div>
+
+        <hr>
+
+        <div class="admin-section">
+            <h3>Admin: View Records</h3>
+            <input type="date" id="searchDate">
+            <button type="button" id="viewRecordsBtn" style="background: #007bff;">View Attendance</button>
+            <div id="attendanceList"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
