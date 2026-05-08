@@ -3,6 +3,8 @@ document.getElementById('attendanceForm').addEventListener('submit', async (e) =
     
     const attendanceData = {
         name: document.getElementById('studentName').value,
+        usn: document.getElementById('studentUSN').value,       // New field
+        gradeSection: document.getElementById('gradeSection').value, // New field
         status: document.getElementById('status').value,
         date: new Date().toISOString().split('T')[0] // YYYY-MM-DD
     };
