@@ -16,6 +16,8 @@ def add_attendance():
 
     collection.insert_one({
         "name": data.get("name"),
+        "usn": data.get("usn"),              # Added USN
+        "gradeSection": data.get("gradeSection"), # Added Grade/Section
         "status": data.get("status"),
         "date": data.get("date")
     })
