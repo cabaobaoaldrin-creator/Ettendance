@@ -1,30 +1,43 @@
-body 
-{ 
+body { 
   font-family: sans-serif;
   display: flex; 
-  justify-content:center; 
+  justify-content: center; 
   padding-top: 50px; 
   background: #f4f4f9; 
 }
-.container 
-{ 
+
+.container { 
     background: white; 
     padding: 2rem; 
     border-radius: 8px; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    width: 350px; /* Added a fixed width for better alignment */
 }
-input, select, button 
-{ display: block; 
+
+/* This selector automatically applies to the new USN and Grade inputs */
+input, select, button { 
+  display: block; 
   width: 100%; 
-  margin: 10px 0; 
-  padding: 10px; }
-button 
-{ 
+  margin: 12px 0; /* Slightly increased margin for better spacing */
+  padding: 10px; 
+  box-sizing: border-box; /* Ensures padding doesn't break the width */
+}
+
+button { 
     background: #28a745; 
     color: white; 
     border: none; 
-    cursor: pointer; }
-button:hover 
-{ 
+    border-radius: 4px;
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+button:hover { 
     background: #218838; 
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
 }
