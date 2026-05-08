@@ -8,12 +8,10 @@
 <body>
     <div class="container">
         <h2>Class Attendance</h2>
-        
         <form id="attendanceForm">
             <input type="text" id="studentName" placeholder="Student Name" required>
             <input type="text" id="studentUSN" placeholder="USN (Student Number)" required>
             <input type="text" id="gradeSection" placeholder="Grade & Section" required>
-            
             <select id="status">
                 <option value="Present">Present</option>
                 <option value="Absent">Absent</option>
@@ -21,17 +19,10 @@
             </select>
             <button type="submit">Submit Attendance</button>
         </form>
-        
         <div id="message"></div>
-
-        <hr>
-
-        <div class="admin-section">
-            <h3>Admin: View Records</h3>
-            <input type="date" id="searchDate">
-            <button type="button" id="viewRecordsBtn" style="background: #007bff;">View Attendance</button>
-            <div id="attendanceList"></div>
-        </div>
+        <p style="text-align:center; margin-top:20px;">
+            <a href="login.html" style="font-size: 0.8rem; color: #888;">Admin Access</a>
+        </p>
     </div>
     <script src="script.js"></script>
 </body>
